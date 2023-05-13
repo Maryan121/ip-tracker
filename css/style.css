@@ -101,7 +101,7 @@ strong{
         width: 70%;
     }
     .info-sec{
-        grid-template-columns: 100%;
+        grid-template-columns: repeat(2,1fr);
         top:29.5%;
     }
     .sect{
