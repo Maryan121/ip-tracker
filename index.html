@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>IP-address Tracker</title>
+    <script src="https://kit.fontawesome.com/f22559516b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+  integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+  crossorigin=""></script>
+</head>
+<body>
+    <main>
+        <div class="first-part">            
+            <h1>ip address tracker</h1>
+            <form>
+                <input type="text" placeholder="enter ip-address..">
+                <button>search</button>
+            </form>
+        </div>
+
+        <div class="info-sec">
+            <div>
+                <img src="./ip-address.png" alt="">
+                <p>ip address</p>
+                <strong class="ipAddress">888.888.888.888</strong>
+            </div>
+            <div>
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p>location</p>
+                <strong class="location">mogadishu,somalia</strong>
+            </div>
+            <div>
+                <!-- <i class="fa-solid fa-clock"></i> -->
+                <i class="fa-solid fa-mobile-retro"></i>
+                <p>country code</p>
+                <strong class="countryCode">+11</strong>
+            </div>
+            <div>
+                <i class="fa-solid fa-wifi"></i>
+                <p>isp</p>
+                <strong class="isp"></strong>
+            </div>
+        </div>
+
+        <div id="map"></div>
+       
+    </main>
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
